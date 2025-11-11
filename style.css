@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+.home {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0 , 0 , 0 , 0.5)) , url("./assets/background-img.jpg");
+    background-size: cover;
+    background-position: center; 
+    display: flex;
+}
+
+.navbar{
+    background-color: white;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    border-radius: 0px 0px 80px 80px ;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2);
+ /* الشادو الخفيف */
+  z-index: 1000; /* باش تبقى فوق باقي العناصر */
+}
+.logo {
+  width: 120px;
+  height: auto;
+  padding : 10px 0px 15px 40px
+  
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 40px;
+    padding-right: 40px;
+}
+.links li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+.links li a:hover{
+    color: #d65921;
+}
+.left {
+  align-items: center;
+  justify-content: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.left h1 {
+    font-size: 40px;
+    padding-right: 120px;
+}
+.left p {
+    font-size: 20px;
+    padding-left: 40px;
+}
+.left button {
+    padding: 10px 40px;
+    border: none;
+    font-size: 18px;
+    background-color: #d65921;
+    color: white;
+    cursor: pointer;
+}
+.left button:hover {
+    background-color: white;
+    color: #d65921;
+    cursor: pointer;
+}
+
+.about {
+    background-image: url(./assets/about-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 25px;
+    padding-left: 200px;
+    gap: 25px; 
+}
+.about-right img {
+    width: 70%;
+    border-radius: 25px;
+}
+.about-left {
+    background-color: rgba(0 , 0 , 0 , 0.5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.menu {
+  padding: 80px 10%;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #777;
+  margin-bottom: 50px;
+}
+
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.menu-item {
+  background-color: #f8f8f8;
+  border-radius: 15px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.menu-item h3 {
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.menu-item p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.menu-item span {
+  font-weight: bold;
+  color: #d65921;
+  font-size: 1.1rem;
+}
+
+.contact {
+  background-color: #f8f8f8;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 50px;
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #d65921;
+}
+
+.contact-form button {
+  background-color: #d65921;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d65921;
+}
+.footer {
+  background-color: #222; /* لون غامق للفوتر */
+  color: #fff; /* النص أبيض */
+  text-align: center; /* في الوسط */
+  padding: 25px 0; /* شوية فراغ فوق وتحت */
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.footer p {
+  margin: 0; /* نحذف أي فراغ تلقائي */
+}
+
+
+@media (max-width: 480px) {
+  .left h1 {
+    font-size: 24px;
+  }
+
+  .left p {
+    font-size: 14px;
+  }
+
+  .left button {
+    font-size: 16px;
+    padding: 8px 25px;
+  }
+
+  .menu-item img {
+    height: 150px;
+  }
+
+  .section-title {
+    font-size: 1.8rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2rem;
+  }
+}
